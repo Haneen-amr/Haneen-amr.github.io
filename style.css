@@ -320,7 +320,7 @@ span{
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .logo img {
         height: auto;
         width: 50px;
@@ -447,3 +447,4 @@ span{
         font-size: 15px; 
     }
 }
+
