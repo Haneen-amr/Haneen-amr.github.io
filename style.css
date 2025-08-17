@@ -76,7 +76,6 @@ nav a {
     transform: translateY(0);
 }
 
-/* Home */
 .home {
     background: linear-gradient(120deg, #2c3e50, #4ca1af);
     display: flex;
@@ -91,13 +90,6 @@ nav a {
     gap: 30px;  
 }
 
-.about .content .p{
-    margin: 200px;
-    align-items: center;
-    gap: 30px;
-}
-    
-
 .home .content > :not(.right) {
     flex: 1;
 }
@@ -110,25 +102,31 @@ nav a {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+.about p{
+    margin: 35px 120px;
+    align-items: center;
+    gap: 30px;
+}
+
 .flip-card {
-  background: transparent;
-  width: 300px;   /* adjust to match your design */
-  height: 300px;
-  perspective: 1000px; /* 3D depth */
-  transition: transform 0.3s ease;
+    background: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  cursor: pointer;
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .flip-card-front, 
@@ -145,48 +143,52 @@ nav a {
 }
 
 .flip-card-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  filter: brightness(0.9);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .flip-card-back {
-  background: rgba(76, 162, 175, 0.9);;
-  color: white;
-  text-align: center;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background: rgba(76, 162, 175, 0.9);;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-back span {
-  font-weight: bold;
-  color: #105e5e; /* highlight */
+    font-weight: bold;
+    color: #105e5e;
 }
 
-/* Flexbox layout fix */
 .education .content {
-  display: flex;
-  align-items: flex-start; /* keeps everything top-aligned */
-  justify-content: space-between; /* pushes left, text, right apart equally */
-  gap: 40px; /* equal gap between columns */
-  padding: 40px; /* optional, adds breathing space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.text h1 {
+h1 {
     font-size: 3rem;
     line-height: 1.2;
 }
 
 .content h2 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -199,7 +201,6 @@ h2 {
 
 p, pre {
     font-size: 1.3rem;
-    margin: 20px 60px;
 }
 
 p.usp {
@@ -209,13 +210,11 @@ p.usp {
     font-size: 2rem;
 }
 
-/* Accent and Highlight */
 span{
     color: #00bcd4;
     font-weight: 600;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -264,14 +263,12 @@ span{
     width: 100%;
 }
 
-/* Other Sections */
 .about, .education, .skills, .projects, .contact {
     background: linear-gradient(120deg, #2c3e50, #4ca1af);
     padding: 40px;
     border-radius: 10px;
 }
 
-/* Skill Groups */
 .skill-group {
     margin: 20px 0;
     padding: 15px 20px;
@@ -292,8 +289,6 @@ span{
     color: #ddd;
     line-height: 1.6;
 }
-
-/* Hover effect for subtle modern interaction */
 .skill-group:hover {
     transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.2);
@@ -301,19 +296,19 @@ span{
 
 #contact p {
   display: flex;
-  align-items: center;  /* vertically center icon + text */
-  gap: 8px;             /* space between icon and email */
-  margin: 20px;            /* optional: remove default p spacing */ 
+  align-items: center;  
+  gap: 8px;             
+  margin: 20px;            
 }
 
 #contact i {
     margin-top: 13px;
-    font-size: 25px;      /* size of the icon */
-    color: rgba(255, 255, 255, 0.2);          /* icon color */
+    font-size: 25px;      
+    color: rgba(255, 255, 255, 0.2);          
 }
 
 #contact a {
-    display: inline-block; /* <-- this makes padding work properly */
+    display: inline-block; 
     padding-top: 12px; 
     color: #E0E4E7;
     font-weight: 600;
@@ -325,19 +320,130 @@ span{
     text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+    .logo img {
+        height: auto;
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 0.5rem;
+        padding-top: 8px;
+        padding-right: 26px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
     .home .content {
         flex-direction: column;
         text-align: center;
+        margin-top: 80px;
+        font-size: 1rem;
     }
 
     .home .right img {
-        max-width: 100%;
+        max-width: 0%;
         height: auto;
     }
 
+    h2 {
+        font-size: 1.8rem; 
+    }
+
+    .about p{
+        margin: 30px 15px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .education {
+        margin-top: -90px;
+    }
+
+
+    .education h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .education .content {
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 15px;
+    }
+
+    .education .content .text {
+        flex: 1 1 100%;
+        order: -1;      
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .flip-card {
+        flex: 1 1 45%;
+        max-width: 200px;
+        height: 180px;
+        margin-top: 0;
+    }
+
+    .flip-card-front, 
+    .flip-card-back {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flip-card-back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
     .text h1 {
-        font-size: clamp(1.5rem, 5vw, 2.2rem); /* scales down instead of wrapping */
+        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        margin-top: 30px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .text {
+        margin-bottom: 50px; 
+    }
+
+    .skills .content pre{
+        font-size: 0.8rem; /* smaller text */
+        white-space: normal;
+        display: flex;
+        flex-direction: column; 
+        margin-left: 40px;
+    }
+
+    .skill-group {
+        padding: 10px; 
+    }
+
+    p, pre {
+        font-size: 1rem; 
+        margin: 10px 20px; 
+    }
+
+    #contact i {
+        font-size: 15px; 
     }
 }
