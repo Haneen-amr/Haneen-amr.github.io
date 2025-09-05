@@ -294,6 +294,12 @@ span{
     background: rgba(255, 255, 255, 0.2);
 }
 
+.projects p{
+    margin: 20px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
 #contact p {
   display: flex;
   align-items: center;  
@@ -443,8 +449,19 @@ span{
         margin: 10px 20px; 
     }
 
+    .projects p {
+        margin: 10px 0.6px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .projects .btn {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    
     #contact i {
         font-size: 15px; 
     }
 }
-
